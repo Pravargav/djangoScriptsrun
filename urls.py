@@ -9,29 +9,24 @@ urlpatterns = [
     path('s4/', views.subject4, name='subject4'),
 
     path('s1/',include([
-        path('theory/', views.theory),
-        path('radio/', views.radio),
-        path('checkbox/', views.checkbox),
+        path('theory1/', views.theory1),
+        path('radio1/', views.radio1),
+        path('checkbox1/', views.checkbox1),
     ])),
     path('s2/',include([
-        path('theory/', views.theory),
-        path('radio/', views.radio),
-        path('checkbox/', views.checkbox),
+        path('theory2/', views.theory2),
+        path('radio2/', views.radio2),
+        path('checkbox2/', views.checkbox2),
     ])),
     path('s3/',include([
-        path('theory/', views.theory),
-        path('radio/', views.radio),
-        path('checkbox/', views.checkbox),
+        path('theory3/', views.theory3),
+        path('radio3/', views.radio3),
+        path('checkbox3/', views.checkbox3),
     ])),
     path('s4/',include([
-        path('theory/', views.theory),
-        path('radio/', views.radio),
-        path('checkbox/', views.checkbox),
+        path('theory4/', views.theory4),
+        path('radio4/', views.radio4),
+        path('checkbox4/', views.checkbox4),
     ])),
-    
-    path('pdf/', views.some_view, name='some_view'),
-    path('csv2/', views.some_view2, name='some_view2'),
-    path('csv3/', views.some_streaming_csv_view, name='some_streaming_csv_view'),
-   
-    
+      
 ] 
